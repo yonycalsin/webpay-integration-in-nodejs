@@ -1,0 +1,20 @@
+{
+  "name": "webpay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Yony Calsin",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "dev": "tsnd --respawn -T -r tsconfig-paths/register main.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "openssl": "^1.1.0",
+    "tsconfig-paths": "^3.9.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "transbank-sdk": "^1.0.2"
+  }
+}
