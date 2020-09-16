@@ -1,9 +1,9 @@
-# Proyecto de ejemplo usando el SDK de Webpay de Node.js
+# Example project using Node.js Webpay SDK
 
-El siguiente proyecto es un ejemplo simple de Webpay a través del SDK de Transbank para Node.js.
+The following project is a simple example of Webpay via the Transbank SDK for Node.js.
 
-Es una aplicación web que usa `express` para montar un servidor local, en el que se utiliza el SDK de Node.js de Webpay
-para implementar los diferentes productos de Webpay, de manera que los integradores puedan revisar ejemplos de uso.
+It is a web application that uses `express` to mount a local server, in which the Webpay Node.js SDK is used
+to implement the different Webpay products, so that integrators can review examples of use.
 
 # Ejecutar ejemplo
 
