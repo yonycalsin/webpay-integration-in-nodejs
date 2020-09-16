@@ -9,3 +9,15 @@ Para las transacciones Webpay en estos ambientes se deben usar estas tarjetas:
 ### Documentation
 
 - https://www.transbankdevelopers.cl/documentacion/como_empezar#instalacion-sdk
+
+### References
+
+- https://github.com/continuum/transbank-sdk-nodejs
+
+### Example
+
+- https://github.com/TransbankDevelopers/transbank-sdk-nodejs-webpay-example
+
+### More Packages
+
+- https://npm.io/search/keyword:pagos
