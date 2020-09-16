@@ -36,32 +36,7 @@ transaction
     const form = new FormData();
     form.append("token_ws", token);
 
-    // {
-    // token: 'e6043d087702ac76680f20862d3efd3b16ebfc68619c36ca4dd9655741bf2a56',
-    // url: 'https://webpay3gint.transbank.cl/webpayserver/initTransaction'
-    // }
-    const urlData = Url.parse(url);
-
-    const request = http.request({
-      method: "POST",
-      host: urlData.host,
-      path: urlData.path,
-      headers: form.getHeaders(),
-    });
-
-    form.pipe(request);
-
-    request.on("response", (res) => {
-      console.log(res.statusCode);
-    });
-
-    request.on("error", (err) => {
-      console.log(err);
-    });
-
-    form.submit(url, (err, res) => {
-      console.log(456, err, res.statusCode);
-    });
+    console.log(form.getBoundary());
   })
   .catch((error: any) => {
     console.log(error.toString());
