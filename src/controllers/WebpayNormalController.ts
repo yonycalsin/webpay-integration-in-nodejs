@@ -77,4 +77,4 @@ class WebpayPlusController {
     }
 }
 
-module.exports = WebpayPlusController;
+export default WebpayPlusController;

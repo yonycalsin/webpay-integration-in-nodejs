@@ -1,10 +1,10 @@
 import express from "express";
+import WebpayPlusController from "./controllers/WebpayNormalController";
 
 const bodyParser = require("body-parser");
-const Transbank = require("transbank-sdk");
-const WebpayPlusController = require("./controllers/WebpayNormalController");
 const app = express();
 const port = 3000;
+
 // set the view engine to ejs
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
