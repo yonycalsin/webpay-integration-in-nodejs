@@ -6,6 +6,8 @@ Para las transacciones Webpay en estos ambientes se deben usar estas tarjetas:
 - Redcompra 4051884239937763 genera transacciones aprobadas (para operaciones que permiten débito Redcompra y prepago)
 - Redcompra 5186008541233829 genera transacciones rechazadas (para operaciones que permiten débito Redcompra y prepago)
 
+Cuando aparece un formulario de autenticación con RUT y clave, se debe usar el RUT `11.111.111-1` y la clave `123`.
+
 ### Documentation
 
 - https://www.transbankdevelopers.cl/documentacion/como_empezar#instalacion-sdk

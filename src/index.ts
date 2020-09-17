@@ -3,7 +3,7 @@ import WebpayPlusController from "./controllers/WebpayNormalController";
 
 const bodyParser = require("body-parser");
 const app = express();
-const port = 3000;
+const port = 5000;
 
 // set the view engine to ejs
 app.set("view engine", "ejs");
