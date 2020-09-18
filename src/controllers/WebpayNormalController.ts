@@ -40,6 +40,8 @@ class WebpayPlusController {
 
         // console.log(2, token);
 
+        console.log(token);
+
         Webpay.getTransactionResult(token)
             .then((response: More) => {
                 transactions[token] = response;
@@ -48,6 +50,7 @@ class WebpayPlusController {
                     token,
                     inputName: "token_ws",
                 });
+                console.log(response);
             })
             .catch((e: any) => {
                 console.log(e);
