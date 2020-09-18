@@ -9,7 +9,8 @@ class WebpayPlusController {
         const configuration = Transbank.Configuration.forTestingWebpayPlusNormal();
         let Webpay = new Transbank.Webpay(configuration).getNormalTransaction();
         let url = "http://" + req.get("host");
-        let amount = 1500;
+        let amount = 25 * 100;
+
         Webpay.initTransaction(
             amount,
             "Orden" + getRandomInt(10000, 99999),
@@ -24,6 +25,8 @@ class WebpayPlusController {
                 inputName: "TBK_TOKEN",
             });
         });
+
+        // console.log(1, transactions);
     }
 
     static response(req: Request, res: Response) {
@@ -34,6 +37,8 @@ class WebpayPlusController {
         let Webpay = new Transbank.Webpay(configuration).getNormalTransaction();
 
         let token = req.body.token_ws;
+
+        // console.log(2, token);
 
         Webpay.getTransactionResult(token)
             .then((response: More) => {
@@ -48,6 +53,8 @@ class WebpayPlusController {
                 console.log(e);
                 res.send("Error");
             });
+
+        // console.log(2, transactions);
     }
 
     static finish(req: Request, res: Response) {
@@ -76,5 +83,9 @@ class WebpayPlusController {
         return res.render("webpay-normal/finish", { transaction, status });
     }
 }
+
+// setInterval(() => {
+// console.log(0, Object.keys(transactions));
+// }, 1000);
 
 export default WebpayPlusController;
